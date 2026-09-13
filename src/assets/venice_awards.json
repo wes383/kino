@@ -1376,5 +1376,25 @@
       "Drama",
       "History"
     ]
+  },
+  {
+    "Year": "2026",
+    "Award": "Golden Lion - Best Film",
+    "Film": "Woman Unknown",
+    "Director": "May el-Toukhy",
+    "tmdb_id": 1511780,
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "Year": "2026",
+    "Award": "Grand Jury Prize",
+    "Film": "Possible Love",
+    "Director": "Lee Chang-dong",
+    "tmdb_id": 1483525,
+    "genres": [
+      "Drama"
+    ]
   }
 ]
