@@ -255,53 +255,6 @@ const LanguageSwitcher = ({ variant = 'fixed' }: LanguageSwitcherProps) => {
           </button>
         )}
 
-        {/* TMDB Attribution */}
-        <div style={{
-          flex: 1,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: isMobile ? '8px' : '12px',
-          paddingTop: isMobile ? '0' : '12px',
-          flexDirection: 'row'
-        }}>
-          <a
-            href="https://www.themoviedb.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              flexShrink: 0
-            }}
-          >
-            <img
-              src="/tmdb-logo.svg"
-              alt="TMDB Logo"
-              style={{
-                height: isMobile ? '16px' : '20px',
-                opacity: 0.8,
-                transition: 'opacity 0.2s'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.opacity = '1'}
-              onMouseLeave={(e) => e.currentTarget.style.opacity = '0.8'}
-            />
-          </a>
-          <p style={{
-            fontSize: isMobile ? '10px' : '12px',
-            color: '#888',
-            margin: 0,
-            lineHeight: 1.2,
-            textAlign: 'start',
-            maxWidth: isMobile ? '280px' : 'none',
-            direction: 'ltr'
-          }}>
-            This product uses TMDB and the TMDB APIs but
-            <br />
-            is not endorsed, certified, or otherwise approved by TMDB.
-          </p>
-        </div>
-
         {/* Desktop layout: Language Switcher */}
         {!isMobile && (
           <div style={{ position: 'relative', flexShrink: 0 }} ref={containerRef}>

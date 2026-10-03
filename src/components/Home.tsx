@@ -640,6 +640,27 @@ export default function Home() {
                 </div>
             )}
 
+            {!isFocused && (
+                <Link
+                    href="/about"
+                    style={{
+                        position: 'absolute',
+                        bottom: isMobile ? '18px' : '24px',
+                        insetInlineStart: isMobile ? '24px' : '36px',
+                        zIndex: 10,
+                        color: '#888',
+                        fontSize: isMobile ? '13px' : '14px',
+                        fontFamily: 'Inter, sans-serif',
+                        textDecoration: 'none',
+                        transition: 'color 0.2s'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.color = '#fff'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#888'}
+                >
+                    {mounted ? t('common.about', 'About') : 'About'}
+                </Link>
+            )}
+
 
         </div>
         </>
